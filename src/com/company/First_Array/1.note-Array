@@ -1,0 +1,13 @@
+Two Pointers
+1. 同向
+    1）注意空间开闭问题
+    2）保留相对位置
+2.反向
+    1）不保留相对位置
+
+练习：
+1. Container With Most Water(11)
+2. Trapping Rain Water(42)
+3. Move Zero (283)
+4. Remove Duplicaters From Sorted Array II (80)
+5. Remove All Adjacent Duplicates In String (1047)
