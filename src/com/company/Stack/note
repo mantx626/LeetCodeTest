@@ -1,0 +1,20 @@
+Stack 栈
+    特性：LIFO(last In First Out)
+    适于需要记录之前的状态，必要的时候可以回到之前的状态，或者利用之前的值
+    不像array，不能用index访问，只能每次拿栈顶的元素
+
+    *动态规划，Dynamic Programming
+    DP: 记录之前的所有的状态，随时可能访问任何一个子问题，所以通常用Array或者HashTable，而且不会回到之前的状态，只会利用之前的值。
+    Stack：每次只需要栈顶的元素，并且每个状态只会被用O(1)次。
+Stack Principle
+    定义好Stack的含义
+        在arr[i]左侧所有比arr[i]大的数
+        递归之前的函数状态（Call stack）
+
+Practice:
+Valid Parentheses (20)
+Next Greater Element I (496)
+Next Greater Element II (503)
+Decode String (394)
+Exclusive Time of Functions (636)
+Largest Rectangle in Histogram (84)
