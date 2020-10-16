@@ -1,0 +1,18 @@
+Heap 堆
+用Array实现的complete Binary Tree, Root代表Heap里最大或最小值。
+commen APIs；
+    peek() -> 查看堆顶元素 O(1)
+    poll() -> 拿出堆顶元素 O(logN)
+    offer() -> 添加元素 O(logN)
+Online vs Offline Algorithm
+    Online Algorithm (using Heap)
+        针对一组流数据，没有固定长度，可以随时根据需求scalable
+    Offline Algorithm (using Sorting):
+        针对一组固定长度数据，每次scale后要重新计算。
+
+Practise:
+Top K Frequent Elements (347)
+Meeting Rooms II (253)
+Find median From Data Stream (295)
+Reorganize String (767)
+Kth Largest Element in a Stream (703)
