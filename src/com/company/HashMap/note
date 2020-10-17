@@ -1,0 +1,29 @@
+HashMap 哈希表
+    HashMap
+        用Array+LinkedList(chaining) 实现的能在平均O(1)时间内快速增删查的数据结构
+        表内存储的数据要实现equals()和hashCode()
+        通常无序
+    LinkedHashMap
+        有顺序的HashMap，遍历顺序是key插入的顺序。
+        所有的key按顺序存成一个LinkedList
+    TreeMap
+        有顺序的map，遍历顺序是key从小到大
+        所有的key存成一个红黑树(self-balancing binary tree)
+        增删查 O(logn)
+    HashSet
+        没有value的HashMap
+When to use HashMap
+    当需要快速查找数据时，可以利用HashMap快速查找
+    注意要查找的数据结构实现了equals()和hashCode()
+    Array和HashMap的区别在于
+        Array无法快速查找，HashMap可以
+        Array里的元素都是有顺序的，HashMap没有
+        Array的overhead比较小，HashMap实现比较复杂
+
+Practise:
+longest Substring Without Repeating Characters (3)
+Group Anagrams (49)
+Copy List with Random Pointer (138)***
+Longest Substring with At Most K Distinct Characters (340)
+Brick Wall (554)
+Encode and Decode TinyURL (535)
