@@ -1,0 +1,22 @@
+Tree-1：BFS
+Tree，类似LinkedList的概念，内存中不一定连续的数据，由各个节点的Reference串起来组成
+    节点可以分为Parent和Child两类
+    无环无向图
+    只有一个入口（root）
+通常没有parent指针的Binary Tree
+BFS 宽度优先搜索 Breadth-First Search
+    按“层”的概念进行的搜索算法
+General Steps：
+    1. Initialize Queue with all entry points
+    2. While queue is not empty
+        a. for each node in the queue (currently)
+        b. poll out the element (add to result)
+        c. expand it, offer children to the queue in order
+        d. increase level
+
+Practise：
+    Symmetric Tree （101）
+    Binary Tree Zigzag level Order Traversal (103)
+    Minimum Depth of Binary Tree (111)
+    Find Largest Value in Each Tree Row (515)
+    N-ary Tree Level Order Traversal (429)
