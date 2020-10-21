@@ -1,0 +1,24 @@
+Top down vs Bottom Up
+Top Down DFS
+    把值通过参数的形式从上往下传
+    一般DFS（）本身不返回值
+Bottom Up
+    把值从下（subproblem）往上传
+    但其那递归层利用Subproblem传上来的值计算当前层的新值并返回
+    一定会有返回值
+
+    General Steps：
+    1. Base Case
+    2. 向子问题要答案（return value）
+    3. 利用子问题的答案构建当前问题（当前递归层）的答案
+    3.（optional）若有必要，做一些额外操作
+    5. 返回答案（给父问题）
+
+
+practise:
+    Q-98: Validate Binary Search Tree
+    Q-110: Balanced Binary Tree
+    Q-113: Path Sum II
+    Q-236: Lowest Common Ancestor of a Binary Tree (***)
+    Q-450: Delete Node in a BST
+    Q-580: Most Frequent Subtree Sum
