@@ -1,0 +1,20 @@
+Graph
+类似LinkedList的概念，内存中不一定连续的数据，由各个节点的Reference串起来组成
+    可能有环
+    分为无向图和有向图
+    没有固定入口
+    可能有多个入口
+Graph Representation
+    Adjacency Matrix
+    Adjacency List
+        List<T>[n]
+        Map<T,List<T>>
+
+
+Practise
+    Q-934 Shortest Bridge
+    Q-310 Minimum Height Trees
+    Q-1091 Shortest Path in Binary matrix
+    Q-994 Rotting Oranges
+    Q-863 All Nodes Distance K in Binary Tree
+    Q-317 Shortest Distance from ALl Buildings
