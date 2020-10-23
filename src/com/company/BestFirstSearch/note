@@ -1,0 +1,13 @@
+Best-First Search
+针对Non-uniform cost search
+利用 Heap
+Dijsktra's Algorithm
+
+使用Heap with all starting points，HashSet 来记录visited
+可以被多次添加进heap，但是只能被展开一次。
+
+practise:
+    Q-264 Ugly NumberII
+    Q-373 Find KPairs with Smallest Sums
+    Q-778 Swim in Rising Water
+    Q-378 Kth Smallest Element in a Sorted Matrix
