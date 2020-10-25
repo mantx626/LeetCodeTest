@@ -1,0 +1,16 @@
+DFS
+Depth First Search
+General Steps：
+    1. Initialize HashSet to record visited nodes
+    2. For all entry nodes, call DFS():
+        a. Validate current node, if visited or invalid or answer node, return.
+        b. Do something (Pre-order)
+        c. For each nerghbor node:
+            i. Validate nerghbor node, if visited or invalid or answer node, don't recurse on it or return answer
+            ii. Recurse down on nerghbor node -> DFS(nerghbor)
+        d. Do something (Post-order)
+    practise:
+        Q-133: Clone Graph
+        Q-399: Evaluate Division
+        Q-785: Is Graph Bipartite
+        Q-841: Keys and Rooms
