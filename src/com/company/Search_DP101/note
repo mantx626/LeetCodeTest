@@ -1,0 +1,27 @@
+DP解题-1
+Search Space 可以用Tree的形式展现出来，便于理解。
+
+DP (Dynamic Programming)
+Search + Memorization
+所有DP都可以写成Bottom Up DFS
+***定义好状态
+从一个中间状态出发去思考递归规则
+Bottom up DFS
+1. define STATE of subproblems
+2. initialize memo to record calculated subproblems
+3. Return DFS(top_level_answer_state)
+DFS(state):
+    1. Base case check
+    2. If current problem is calculated, return its answer
+    3.* For each subproblem x
+        a. Ask subproblem for their answers -> cal DFS(subproblem_state)
+        b. Build up current state problem answer based on subproblem answers
+    4.* Store current problem answer.
+
+Practise:
+    Q-90 Subsets II
+    Q-22 Generate Parentheses
+
+    Q-746 Min Cost Climbing Stairs
+    Q-70 Climbing Stairs
+    Q-35 Maximum Subarray
