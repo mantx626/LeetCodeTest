@@ -1,8 +1,5 @@
 package com.company.SearchInGraph;
 
-import com.company.GraphDFS.Algos;
-import org.w3c.dom.Node;
-
 import java.io.*;
 import java.util.*;
 
@@ -66,14 +63,23 @@ public class input {
 
     public static void main(String[] args) {
         input input = new input();
-        Algos BFS = new Algos();
+        Algos Algos = new Algos();
         List<String> inputlist = input.readFile("C:\\Users\\MTX\\Documents\\GitHub\\LeetCodeTest\\src\\com\\company\\SearchInGraph\\input");
         List<List<String>> ss = input.toList(inputlist);
         Map<String,Map<String,Integer>> graph = input.constructGraph(ss);
-        LinkedList<String> path = BFS.BFShortestPath("Казань","Таллинн",graph);
-        for (String s : path){
-            System.out.println(s);
-        }
-    }
+
+//        LinkedList<String> path = Algos.BFShortestPath("Казань","Таллинн",graph);
+//        for (String s : path){
+//            System.out.println(s);
+//        }
+//    }
+
+//    LinkedList<String> path = Algos.DFShortestPath("Казань","Таллинн",graph);
+        List<String> path = new ArrayList(graph.get("Казань").keySet());
+        System.out.println(path.get(0));
+//        for (String s : path){
+//        System.out.println(s);
+//    }
+}
 
 }
